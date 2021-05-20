@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        Крестики - нолики. ромб
+    </title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/detectZoom.js"></script>
+    <script src="js/CrossCircleSources.js"></script>
+    <script>
+
+
+    </script>
+</head>
+
+<body onload="bodyLoad()" style=" background: rgb(69,69,69);text-align: center;">
+    <div id="divGameSeting" style="margin: 0 0  0  0%;">
+        <a style="width: 90%; height: 30px;">Размер поля - игровой</a><br>
+        <div class="vyrovnyat"><br>
+            <div><button onclick="decSizeMap()" style="width: 100%; height: 100%;">Уменьшить</button></div>
+            <div><a id="sizeMap" readonly=true style="height: 100%; width: 50%; text-align: center;">7</a></div>
+            <div> <button onclick="incSizeMap() " style="width: 100%;height: 100%;">Увеличить</button> </div>
+        </div>
+        <button onclick="drawMainField()" style="width: 100%">Начать игру</button>
+
+    </div>
+
+    <div id="divGameInfo" style="display: none;">
+
+        <a id="aEndGame" style=" left: 1%; top: 0%;position: fixed" onclick="clickButtonEndingGame()"
+            >закончить</a>
+        <a id="aCountCross" style="top: 90%;left: 1% ;position: fixed">1</a>
+        <a id="aCountToe" style="top: 90%; right: 1%;position: fixed">2</a>
+        <a id="aCountNotFinishCell" style="right: 1%;top: 0%;position: fixed">3</a>
+
+
+    </div>
+
+
+    <canvas id="generalCanvas" style="display: inline"></canvas>
+
+
+
+
+</body>
+
+</html>
